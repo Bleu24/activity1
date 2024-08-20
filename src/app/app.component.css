@@ -2,12 +2,16 @@
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+
 }
+
 
 div.page {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 div.header-main {
@@ -43,4 +47,81 @@ a:hover {
 
 div.header-main div.logo {
     font-size: 40px;
+}
+
+footer {
+    background-color: royalblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-grow:1;
+    background-color: black;
+    color: white;
+    background-image: url("../assets/bg.png");
+    background-color: rgba(128, 128, 128, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.social-media {
+    display: flex;
+    /* background-color: rgba(128, 128, 128, 0.5); Gray with 50% transparency */
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;    
+}
+.social-media ul {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+
+.social-media ul li{
+    list-style: none;
+}
+
+div.social-media ul svg {
+    width: 100px;
+    height: 100px;
+    color: royalblue;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+    width: 400px;
+    height: 200px;
+}
+
+.about-heading {
+    font-family: "BhuTuka Expanded One", serif;
+    font-weight: bold;
+}
+
+.about-text {
+    text-wrap: wrap;
+    text-align: justify;
+    font-family: arial;
+    font-size: 14px;
+}
+
+div.social-media ul svg:hover {
+    width: 100px;
+    height: 100px;
+    color: goldenrod;
+    transition: color 200ms ease-out 100ms;
 }
