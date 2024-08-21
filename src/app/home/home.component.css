@@ -65,7 +65,7 @@ footer {
     flex-grow:1;
     background-color: black;
     color: white;
-    background-image: url("assets/bg.png");
+    /* background-image: url("../assets/bg.png"); */
     background-color: rgba(128, 128, 128, 0.5);
     background-repeat: no-repeat;
     background-size: cover;
